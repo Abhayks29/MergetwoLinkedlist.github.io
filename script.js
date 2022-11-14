@@ -8,7 +8,7 @@ const heading = document.getElementById('heading')
 
 
 function isArraySorted(arr) {
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length-2; i++) {
       if (arr[i + 1] && arr[i + 1] > arr[i]) {
         continue;
       } else if (arr[i + 1] && arr[i + 1] < arr[i]) {
