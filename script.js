@@ -126,13 +126,23 @@ result.addEventListener('click', () => {
 
 
 
-    // adding list-1 element to the list
-    inputList1.forEach(element => {
-        l1.add(element); 
-    });
+    finalList = []
 
-    // adding list-2 element to the list
+    // adding list-1 element to the array
+    inputList1.forEach(element => {
+        finalList.push(element); 
+    });
+    
+    // adding list-1 element to the array
     inputList2.forEach(element => {
+        finalList.push(element); 
+    });
+    
+    //sorting the array
+    finalList.sort(function(a, b){return a - b})
+
+    // adding finalArray element to the Linkedlist
+    finalList.forEach(element => {
         l1.add(element);
     });
 
